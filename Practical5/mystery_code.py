@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer:
+# Answer:the output is the highest random number(from 1 to 100) generated among 10 loop
 
 # Import libraries
 # randint allows drawing a random number,
