@@ -6,10 +6,11 @@
 # adjust the rotation and font size
 
 import matplotlib.pyplot as plt
+
 costs = [1, 8, 15, 7, 5, 14, 43, 40]
-name = ['Los Angeles 1984', 'Seoul1988', 'Barcelona 1992', 'Atlanta 1996',
-        'Sydney 2000', 'Athens 2003', 'Beijing 2008', 'London 2012']
+name = ['Los Angeles 1984', 'Sydney 2000', 'Atlanta 1996', 'Seoul 1988', 'Athens 2003', 'Barcelona 1992', 'London 2012',
+        'Beijing 2008']
 print(sorted(costs))
-plt.bar(name, costs)
+plt.bar(name, sorted(costs))
 plt.xticks(rotation=20, fontsize=8)
 plt.show()
