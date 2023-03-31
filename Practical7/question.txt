@@ -1,0 +1,3 @@
+Question: What proportion of cases have died in US? What proportion of cases have died in the UK?
+Corresponding line: 58
+Result: Proportion of cases died in the United Kingdom: 5.28% and proportion of cases died in the United States: 1.65%, the death proportion in UK is much higher than that in US.
