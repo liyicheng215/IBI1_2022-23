@@ -1,0 +1,8 @@
+Human and cat:
+score: 3717, percentage of identical amino acids: 85.22%
+Mouse and cat:
+score: 3592, percentage of identical amino acids: 81.74%
+Human and mouse:
+score: 3579, percentage of identical amino acids: 82.11%
+Most closely related: human and cat
+The three sequences provided are for the ACE2 protein in humans, cats, and mice. ACE2 (angiotensin-converting enzyme 2) is a protein that plays a critical role in the renin-angiotensin system, which regulates blood pressure and fluid balance in the body. The comparison of these sequences shows the degree of similarity and difference between the ACE2 proteins in these three species. The score of 3717 and percentage of identical amino acids of 85.22% indicates that the ACE2 protein sequences in humans and cats are the most similar among the three comparisons. The percentage of identical amino acids and scores between the human and mouse, mouse and cat are 3592, 81.74%, and 3579 82.11%, which are quite close and lower than that between human and cat, so it is less similar between these two sequences. ACE2 is a conserved protein, so all three sequences have a high degree of similarity.
