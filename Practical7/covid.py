@@ -6,19 +6,18 @@ import numpy as np
 os.chdir("C:/cygwin64/home/OrangE/IBI1_2022-23/Practical7")
 covid_data = pd.read_csv("full_data.csv")
 
-print(covid_data.iloc[2:1000:100, :])  # code for showing the second column from every 100th row from the first 1000
-# rows
+print(covid_data.iloc[99:1000:100, 1], "\n")  # show the second column from every 100th row from the first 1000 rows
 
-i = 1
-boolean_list1 = [False]
+i = 0
+boolean_list1 = []
 while i <= 7995:  # create a Boolean
     a = covid_data.loc[i, "location"]
     boolean_list1.append(a == "Afghanistan")
     i = i + 1
-print(covid_data.iloc[boolean_list1, 4])  # use a Boolean to show “total cases” for rows corresponding to Afghanistan
+print(covid_data.iloc[boolean_list1, 4], "\n")  # use Boolean to show total cases for rows corresponding to Afghanistan
 
-o = 1  # way1: use a Boolean
-boolean_list2 = [False]
+o = 0  # way1: use a Boolean
+boolean_list2 = []
 while o <= 7995:
     b = covid_data.loc[o, "date"]
     boolean_list2.append(b == "2020-03-31")
@@ -27,8 +26,8 @@ data1 = covid_data.loc[boolean_list2, ['new_cases', 'new_deaths']]
 data2 = covid_data.loc[covid_data['date'] == '2020-03-31', ['new_cases', 'new_deaths']]  # way2 use loc to search
 # data1 and data2 are the same and there are two ways of find the data of specific date
 
-print("mean number of new cases on 31 March 2020 is", np.mean(data2['new_cases']))
-print("mean number of new deaths on 31 March 2020 is", np.mean(data2['new_deaths']))
+print("mean number of new cases on 31 March 2020: ", np.mean(data2['new_cases']))
+print("mean number of new deaths on 31 March 2020: ", np.mean(data2['new_deaths']))
 # computed the mean number of new cases and new deaths on 31 March 2020
 
 fig, ax = plt.subplots(2, 2, figsize=(16, 8))
