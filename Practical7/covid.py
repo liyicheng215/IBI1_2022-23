@@ -6,7 +6,7 @@ import numpy as np
 os.chdir("C:/cygwin64/home/OrangE/IBI1_2022-23/Practical7")
 covid_data = pd.read_csv("full_data.csv")
 
-print(covid_data.iloc[99:1000:100, 1], "\n")  # show the second column from every 100th row from the first 1000 rows
+print(covid_data.iloc[0:1001:100, 1], "\n")  # show the second column from every 100th row from the first 1000 rows
 
 i = 0
 boolean_list1 = []
