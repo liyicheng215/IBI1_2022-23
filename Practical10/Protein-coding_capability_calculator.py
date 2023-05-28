@@ -8,7 +8,7 @@ def capacity(sequence):
     stop_position = sequence.rfind(stop_codon)
 
     if start_position == -1 or stop_position == -1:  # if no start or stop codon, return 'unclear'
-        return 0.0, 'unclear'
+        return 'unclear'
 
     coding_length = stop_position - start_position + 3
     coding_percent = coding_length / length  # calculate the coding percentage
